@@ -10,9 +10,16 @@
     {% else %}
         <lu>
         {% for user in users %}
-            <li>user</li>
+            <li>
+                <a href="{% url 'update_user' user.id %}">{{user}}</a>
+                <a href="{% url 'delete_user' user.id %}">Delete</a>
+            </li>
         {% endfor %}
-        </lu>>
+        </lu>
     {% endif %}
+
+    <br>
+
+    <a href="{% url 'save_user' %}">New User</a>
 </body>
 </html>
