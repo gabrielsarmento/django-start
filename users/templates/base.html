@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+</head>
+<body>
+    {% if not users %}
+        No users
+    {% else %}
+        <lu>
+        {% for user in users %}
+            <li>user</li>
+        {% endfor %}
+        </lu>>
+    {% endif %}
+</body>
+</html>
